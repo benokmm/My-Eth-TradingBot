@@ -85,7 +85,7 @@ async function run(){
     async function parseTransactionData(transactionDetails) {
       if(transactionDetails.input){
 
-		fs.appendFileSync('transactions_hashes.txt', 'Trx hash : ' + transactionDetails.hash.toString() + '\r\n')
+		fs.appendFileSync('transactions_hashes.txt', 'Eth hash : ' + transactionDetails.hash.toString() + '\r\n')
         const transactionInput = transactionDetails.input
 
         var path = 'transactions_hashes.txt';
